@@ -1,0 +1,213 @@
+root {
+    display: block;
+}
+
+body {
+    font-family: "Helvetica", "serif";
+}
+
+.background {
+    height: 100vh;
+    padding-top: 50px;
+    background: linear-gradient(to bottom right, steelblue, lightgrey);
+}
+
+.navigationMenu {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #434749;
+    position: fixed;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.navBtn, .homeIcon {
+    float: left;
+    width: 100px;
+    height: 50px;
+    color: lightsteelblue;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.navBtn {
+    font-size: large;
+}
+
+.homeIcon {
+    font-size: 33px;
+}
+
+.navBtn:hover, .homeIcon:hover {
+    background-color: #7C7C7C;
+}
+
+.navBtn:visited, .homeIcon:visited, .navBtn:active, .homeIcon:active {
+    color: lightsteelblue;
+}
+
+/*----------------------------------Home----------------------------------*/
+.header-panel {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 42px;
+    text-align: center;
+    text-shadow: -1px 0 silver, 0 1px silver, 1px 0 silver, 0 -1px silver;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.panel-home-body {
+    width: 50%;
+    margin: auto;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 16px;
+    text-shadow: -1px 0 silver;
+    background: linear-gradient(to bottom right, lightslategrey, azure);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -2px -3px 20px black;
+}
+
+.homeResult {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+
+/*----------------------------------Info----------------------------------*/
+.personalPic {
+    width: 179px;
+    height: 210px;
+}
+
+.panel-info-body {
+    width: 70%;
+    min-width: 1080px;
+    height: 300px;
+    margin: auto;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 16px;
+    text-shadow: -1px 0 silver;
+    background: linear-gradient(to bottom right, lightslategrey, azure);
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: -2px -3px 20px black;
+}
+
+.left-info-panel {
+    width: 80%;
+    float: left;
+}
+
+.profile-pic {
+    float: right;
+    width: 20%;
+    padding-left: 30px;
+}
+
+
+
+
+/*----------------------------------Snake----------------------------------*/
+#PlayArea {
+	position: relative;
+    background-color: grey;
+    width: 486px;
+    height: 486px;
+    border: 3px solid black;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+#ButtonArea {
+    text-align: center;
+}
+
+.snakeButton {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    background-color: white;
+        color: black;
+        border: 2px solid grey;
+}
+
+.snakeButton:hover {
+    background-color: #e7e7e7;
+}
+
+#PauseButton {
+    margin: 0px;
+}
+
+#head {
+	position: absolute;
+	z-index: 1;
+	border-radius: 0px 8px 8px 0px;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+#tail {
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+}
+
+#piece {
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*-------------------------------Encryption-------------------------------*/
+.panel-encrypt-body {
+    width: 70%;
+    height: 100px;
+    margin: auto;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 16px;
+    text-shadow: -1px 0 silver;
+    background: linear-gradient(to bottom right, lightslategrey, azure);
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: -2px -3px 20px black;
+}
+
+
+
+
+/*----------------------------------ECMT----------------------------------*/
+.panel-ecmt-body {
+    width: 70%;
+    height: 100px;
+    margin: auto;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 16px;
+    text-shadow: -1px 0 silver;
+    background: linear-gradient(to bottom right, lightslategrey, azure);
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: -2px -3px 20px black;
+}

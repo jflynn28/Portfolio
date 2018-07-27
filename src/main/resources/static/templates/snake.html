@@ -1,0 +1,25 @@
+<div>
+    <table id="table" width="30%" align="center">
+        <tr>
+            <td colspan="2">
+                <div id="PlayArea"></div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="100">
+                <button id="PlayButton" type="button" class="snakeButton"><font face="verdana"><b>Play</b></font></button><br><br>
+                <button id="PauseButton" type="button" class="snakeButton"><font face="verdana"><b>Pause</b></font></button><br><br>
+            </td>
+            <td width="60">
+                <form>
+                    <input type="radio" name="difficulty" value="e" onclick="radioGlow(2);"> <font face="verdana"><b>Easy</b></font><br>
+                    <input type="radio" name="difficulty" value="n" onclick="radioGlow(3);" checked="checked"> <font face="verdana"><b>Normal</b></font><br>
+                    <input type="radio" name="difficulty" value="h" onclick="radioGlow(4);"> <font face="verdana"><b>Hard</b></font><br>
+                    <input type="radio" name="difficulty" value="vh" onclick="radioGlow(5);"> <font face="verdana"><b>Very Hard</b></font>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <script>$.getScript("/portfolio/js/snake.js");</script>
+</div>

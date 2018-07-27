@@ -1,0 +1,19 @@
+<div class="panel-group">
+    <div class="header-panel">Welcome!</div>
+    <div class="panel-home-body">This web application was built during my spare time in order to showcase some of my accomplishments and experience. This app integrates some
+        common front end technologies such as AngularJS, Bootstrap, and JQuery. It communicates with a Tomcat server, provided by a Spring Boot Java back end application.
+        The app also uses Angular routing to dynamically load html content into the body so the navigation tab doesn't need to reload each time. Angular can send requests
+        to the Java back end through the http post and get methods as demonstrated below. The input is sent over, picked up by a Spring endpoint, used in Java's Random
+        utility, and the result is sent back to be displayed. Both the input and result are bound to variables in the front end controller.
+        <br><br><br>
+        <form>
+            Max: <input type="number" id="inputNum" name="inputNum" placeholder="10" min="10" max="1000000" data-ng-model="ctrl.inputVal"/>
+            <br><br>
+            <input type="submit" class="btn btn-outline-primary" data-ng-click="generateRandom()" value="Generate Random Number"/>
+        </form>
+        <br>
+        <div>
+            <span class="homeResult">Result: </span><div class="homeResult" data-ng-bind="ctrl.resultVal"></div>
+        </div>
+    </div>
+</div>
